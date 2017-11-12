@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../../libs/webix/webix.css" type="text/css" charset="utf-8">
+        <script src="../../libs/webix/webix_debug.js" type="text/javascript" charset="utf-8"></script>
+    </head>
+    <body>
+        <div id="log_form" style="width:400px; height:300px; margin:10px;"></div>
+        <script type="text/javascript">
+		        webix.ui({
+		            view:"form", 
+		            id:"log_form",
+		            width:300,
+		            elements:[
+		                { view:"text", label:"Email", name:"email"},
+		                { view:"text", type:"password", label:"Password", name:"password"},
+		                { margin:5, cols:[
+		                    { view:"button", value:"Login" , type:"form"},
+		                    { view:"button", value:"Cancel"}
+		                ]}
+		            ]
+		        });
+		</script>
+    </body> 
+</html>

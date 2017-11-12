@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Basic Initialization</title>
+        <link rel="stylesheet" href="../../libs/webix/webix.css" type="text/css" charset="utf-8">
+        <script src="../../libs/webix/webix.js" type="text/javascript" charset="utf-8"></script>
+	    <style>
+			#areaA{
+				margin: 30px;
+			}
+		</style>
+    </head>
+    <body>
+        <div id="areaA"></div>
+        <script type="text/javascript">
+	        webix.ui({
+				container:"areaA",
+				view:"form", scroll:false,
+				width:300,
+				elements:[
+					{ view:"text", 
+					  label:"Email",
+					  required:"true",
+					  labelAlign:"right",
+					  labelPosition:"left"},
+					{ view:"text", type:"password", label:"Password"},
+					{ margin:5, cols:[
+						{ view:"button", label:"Login" , type:"form" },
+						{ view:"button", label:"Cancel" }
+					]}
+				]
+			});
+		</script>
+    </body> 
+</html>
