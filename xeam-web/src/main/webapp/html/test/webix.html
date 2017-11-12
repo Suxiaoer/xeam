@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../../libs/webix/webix.css" type="text/css" charset="utf-8">
+        <script src="../../libs/webix/webix_debug.js" type="text/javascript" charset="utf-8"></script>
+    </head>
+    <body>
+        <div id="testA" style="width:400px; height:300px; margin:10px;"></div>
+        <script type="text/javascript">
+			webix.ui({
+				type:"line",
+				container:"testA",
+	    		rows: [
+	    			{ template:"Row 1"},
+	    			{ template:"Row 2"}
+	    		]
+			});
+		</script>
+    </body> 
+</html>
