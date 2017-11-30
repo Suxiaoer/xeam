@@ -5,31 +5,50 @@
         <link rel="stylesheet" href="../../libs/webix/webix.css" type="text/css" charset="utf-8">
         <script src="../../libs/webix/webix.js" type="text/javascript" charset="utf-8"></script>
 	    <style>
-			#areaA{
+			#loginDiv{
 				margin: 30px;
 			}
+			
 		</style>
     </head>
     <body>
-        <div id="areaA"></div>
+        <div id="loginDiv"></div>
         <script type="text/javascript">
-	        webix.ui({
-				container:"areaA",
+        webix.ui({
+				container:"loginDiv",
 				view:"form", scroll:false,
 				width:300,
 				elements:[
-					{ view:"text", 
-					  label:"Email",
+				   { 
+					  view:"text", 
+					  label:"username",
 					  required:"true",
 					  labelAlign:"right",
-					  labelPosition:"left"},
-					{ view:"text", type:"password", label:"Password"},
+					  labelWidth:"100px"
+					},
+					{ 
+					  view:"text", 
+					  type:"password", 
+					  label:"Password"
+					},
+					
 					{ margin:5, cols:[
-						{ view:"button", label:"Login" , type:"form" },
+						{ view:"button", label:"Login" , type:"form"},
 						{ view:"button", label:"Cancel" }
 					]}
 				]
 			});
+        
+           $$('$text1').render("$text1","<span class='webix_icon fa-user'></span>","add");
+           
+           /*
+           webix.protoUI({
+        	   name:"mytext",
+        	   $renderIcon:function(){
+        	       return "<span class='webix_icon fa-user'></span>";
+        	   }
+        	}) */
+       
 		</script>
     </body> 
 </html>
