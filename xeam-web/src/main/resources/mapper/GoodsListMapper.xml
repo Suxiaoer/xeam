@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.com.xeam.dao.GoodsListDAO">
+    <!-- 搜索食品类型 -->
+    <select id="searchGoodsType" resultType="java.util.HashMap">
+       select 
+		   id,
+		   food_type as foodType,
+		   food_type_name as foodTypeName
+		 from xeam_food_type_t
+    </select>
+    
+    <!-- 根据食品类型搜索食品 -->
+    <select id="searchGoodsListByType" resultType="java.util.HashMap">
+       select 
+		  id,
+		  type_id as typeId,
+		  food_name as foodName,
+		  food_quality as foodQuality,
+		  food_buy_hot as foodBuyHot,
+		  price,
+		  unit,
+		  food_unit as foodUnit,
+		  food_pic as foodPic
+		 from xeam_food_t
+		 where type_id = #{vo.typeId}
+    </select>
+	
+</mapper>
