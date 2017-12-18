@@ -5,10 +5,12 @@ import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import cn.com.xeam.dao.GoodsListDAO;
 @Service
 public class GoodsListServiceImpl implements GoodsListService {
 	@Autowired
-	private GoodsListDao dao;
+	private GoodsListDAO dao;
 	/*
      * (non-Javadoc)
      * @see cn.com.xeam.GoodsListService#searchGoodsType(java.util.Map)

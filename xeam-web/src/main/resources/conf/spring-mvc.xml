@@ -13,7 +13,7 @@
     http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd">
      
     <!-- 扫描controller（controller层注入） -->
-   <context:component-scan base-package="cn.com.xeam"/>
+   <context:component-scan base-package="cn.com.xeam,cn.com.xeam.dao"/>
    
    <!-- don't handle the static resource -->
    <mvc:default-servlet-handler />

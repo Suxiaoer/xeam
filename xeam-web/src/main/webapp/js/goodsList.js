@@ -1,7 +1,7 @@
 requirejs.config({
 	baseUrl:"../libs/webix",
 	shim:{
-		webix_debug:{
+		webix:{
 			deps:[],
 			exports:"webix"
 		}
@@ -11,7 +11,7 @@ requirejs.config({
 		common:"../../js/common/common"
 	}
 });
-require(["webix_debug","goodsListOp","common"],function(webix,opObj,common){
+require(["webix","goodsListOp","common"],function(webix,opObj,common){
 	  debugger;
 	  opObj.searchGoodsType();
 	  var accordion = webix.ui({

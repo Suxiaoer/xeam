@@ -3,6 +3,8 @@ package cn.com.xeam;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import cn.com.xeam.dao.UserDAO;
+
 @Service
 public class UserServiceImpl implements UserService{
  

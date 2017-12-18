@@ -1,8 +1,10 @@
-package cn.com.xeam;
+package cn.com.xeam.dao;
+
+import cn.com.xeam.User;
 
 public interface UserDAO {
 	/**
-     * 添加新用户
+     * 添加新用�?
      * @param user
      * @return
      */

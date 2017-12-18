@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @RequestMapping("/goodsList")
 public class GoodsListController {
    @Autowired
-   private GoodsListService service;
+   private GoodsListService goodsListService;
    /**
     * 查询食品类型控制器
     * @param vo
@@ -22,7 +22,7 @@ public class GoodsListController {
    @ResponseBody
    @RequestMapping("searchGoodsType")
    public Map<String,String>searchGoodsType(@RequestBody Map<String,String> vo){
-	   Map<String,String> result = service.searchGoodsType(vo);
+	   Map<String,String> result = goodsListService.searchGoodsType(vo);
 	   return result;
    }
    
@@ -32,7 +32,7 @@ public class GoodsListController {
     * @return
     */
 	public List<Map<String,String>>searchGoodsListByType(Map<String,String> vo){
-		List<Map<String,String>> result = service.searchGoodsListByType(vo);
+		List<Map<String,String>> result = goodsListService.searchGoodsListByType(vo);
 		return result;
 	}
 }

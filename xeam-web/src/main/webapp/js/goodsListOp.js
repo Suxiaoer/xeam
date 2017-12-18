@@ -8,11 +8,11 @@ define(["common"],function(common){
 	return {
 		//查询食品类型
 		searchGoodsType: function(){
-//	     	var url = "goodsList/searchGoodsType";
-//	     	var vo = {name:"zs"};
-//	     	common.postAjax(url,vo,function(data){
-//	     		debugger;
-//	     	});
+	     	var url = "goodsList/searchGoodsType";
+	     	var vo = {name:"zs"};
+	     	common.postAjax(url,vo,function(data){
+	     		debugger;
+	     	});
 		},
 		//根据类型搜索食品
 		searchGoodsListByType: function(){
