@@ -15,19 +15,19 @@ public class GoodsListController {
    @Autowired
    private GoodsListService goodsListService;
    /**
-    * 查询食品类型控制器
+    * 鏌ヨ椋熷搧绫诲瀷
     * @param vo
     * @return
     */
    @ResponseBody
    @RequestMapping("searchGoodsType")
-   public Map<String,String>searchGoodsType(@RequestBody Map<String,String> vo){
-	   Map<String,String> result = goodsListService.searchGoodsType(vo);
+   public List<Map<String,String>>searchGoodsType(@RequestBody Map<String,String> vo){
+	   List<Map<String,String>> result = goodsListService.searchGoodsType(vo);
 	   return result;
    }
    
    /**
-    * 根据食品类型搜索食品列表
+    * 鏍规嵁椋熷搧绫诲瀷鏌ヨ椋熷搧
     * @param vo
     * @return
     */

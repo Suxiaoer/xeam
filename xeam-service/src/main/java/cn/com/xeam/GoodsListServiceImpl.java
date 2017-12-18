@@ -16,8 +16,8 @@ public class GoodsListServiceImpl implements GoodsListService {
      * @see cn.com.xeam.GoodsListService#searchGoodsType(java.util.Map)
      */
 	@Override
-	public Map<String, String> searchGoodsType(Map<String, String> vo) {
-		Map<String,String> result = dao.searchGoodsType(vo);
+	public List<Map<String, String>> searchGoodsType(Map<String, String> vo) {
+		List<Map<String,String>> result = dao.searchGoodsType(vo);
 		return result;
 	}
 	/*
