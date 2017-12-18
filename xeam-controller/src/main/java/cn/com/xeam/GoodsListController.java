@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @RequestMapping("/goodsList")
 public class GoodsListController {
    @Autowired
-   private GoodsListService goodsListService;
+   private GoodsListService  goodsListService;
    /**
     * 查询食品类型
     * @param vo
